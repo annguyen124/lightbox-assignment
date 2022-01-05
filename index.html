@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__background-top"></div>
-      <div class="header container">
+      <div class="header__container container">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -53,95 +53,110 @@
     </header>
 
     <main class="main container">
-      <section class="section home">
+      <section class="section category">
         <div class="home__content">
-          <h1 class="home__title--big">what we do</h1>
+          <h1 class="home__title-feature">what we do</h1>
           <div class="home__item">
-            <div class="home__title">
-              <img
-                src="assets/images/web_development.png"
-                alt="web-development"
-              />
-              <h2 class="home__title-heading">web development</h2>
-            </div>
-            <div class="home__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur.
+            <img
+              src="assets/images/web_development.png"
+              alt="web-development"
+              class="home__item-img"
+            />
+            <div class="home__details">
+              <h2 class="home__subtitle">web development</h2>
+              <div class="home__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur.
+              </div>
             </div>
           </div>
           <div class="home__item">
-            <div class="home__title">
-              <img src="assets/images/graphics.png" alt="graphics" />
-              <h2 class="home__title-heading">graphics</h2>
-            </div>
-            <div class="home__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur.
+            <img
+              src="assets/images/graphics.png"
+              alt="web-development"
+              class="home__item-img"
+            />
+            <div class="home__details">
+              <h2 class="home__subtitle">graphics</h2>
+              <div class="home__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur.
+              </div>
             </div>
           </div>
           <div class="home__item">
-            <div class="home__title">
-              <img
-                src="assets/images/usability_design.png"
-                alt="usability-design"
-              />
-              <h2 class="home__title-heading">usability design</h2>
-            </div>
-            <div class="home__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur.
+            <img
+              src="assets/images/usability_design.png"
+              alt="web-development"
+              class="home__item-img"
+            />
+            <div class="home__details">
+              <h2 class="home__subtitle">usability design</h2>
+              <div class="home__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur.
+              </div>
             </div>
           </div>
         </div>
         <aside class="home__quote">
-          <p class="home__quote-detail">
-            Lightbox did an amazing job with our website. From start to finish
-            they were professional, fast and totally fictitious.
-          </p>
-          <p class="home__quote-detail">
-            It was amazing how a company that doesn't even exist could put
-            together such an amazing site for us. Thank you Lightbox!
-          </p>
-          <p class="home__quote-author">John Rushmore MADEUPPEOPLE.COM</p>
-        </aside>
-      </section>
-      <section class="section home">
-        <div class="title">
-          <h1 class="home__title--big">recent work</h1>
-          <div class="home__pagination">
-            <ul class="home__pagination-list">
-              <li class="home__pagination-item"></li>
-              <li class="home__pagination-item"></li>
-              <li class="home__pagination-item"></li>
-              <li class="home__pagination-item"></li>
-            </ul>
-          </div>
-          <div class="home__images">
-            <img
-              src="assets/images/recent_work.png"
-              alt="recent_work"
-              class="home__img"
-            />
-            <p class="home__img-description">
-              Web Design Week Layout: A design layout I created for Psdtuts+
+          <div class="home__quote-detail">
+            <p>
+              Lightbox did an amazing job with our website. From start to finish
+              they were pro&shy;fessional, fast and to&shy;tally fictitious.
+            </p>
+            <p>
+              It was amazing how a company that doesn't even exist could put
+              together such an amazing site for us. Thank you Lightbox!
             </p>
           </div>
+          <div class="home__quote-author">
+            <p class="quote__author-name">John Rushmore</p>
+            <p class="quote__author-email">MADEUPPEOPLE.COM</p>
+          </div>
+        </aside>
+      </section>
+      <section class="section work">
+        <div class="home__work">
+          <h1 class="home__title-work">recent work</h1>
+          <ul class="home__pagination-list">
+            <li class="home__pagination-item active">1</li>
+            <li class="home__pagination-item">2</li>
+            <li class="home__pagination-item">3</li>
+            <li class="home__pagination-item">4</li>
+          </ul>
+        </div>
+        <div class="home__images">
+          <img
+            src="assets/images/recent_work.png"
+            alt="recent_work"
+            class="home__img"
+          />
+          <p class="home__img-description">
+            <strong> Web Design Week Layout:</strong> A design layout I created
+            for Psdtuts+
+          </p>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <img
-        src="assets/images/footer_logo.png"
-        alt="footer-logo"
-        class="footer__img"
-      />
-      <p class="footer__info">
-        font via dafont (duepuntozero) icons by iconeden
-      </p>
-      <p class="footer__copyright">copyright (c) 2009 rockablepress</p>
+      <div class="footer__container container">
+        <div class="footer__img">
+          <img src="assets/images/footer_logo.png" alt="footer-logo" />
+        </div>
+        <p class="footer__info">
+          <span class="footer__info-title">font via</span> dafont (duepuntozero)
+          <br />
+          <span class="footer__info-title"> icons by </span> iconeden
+        </p>
+        <p class="footer__copyright">
+          <span class="footer__info-title">copyright (c) 2009</span>
+          rockablepress
+        </p>
+      </div>
     </footer>
   </body>
 </html>
