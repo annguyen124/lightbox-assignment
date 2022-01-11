@@ -4,12 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Lightbox - Contact</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/fav_icon.png">
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Lightbox</title>
   </head>
   <body>
-    <header></header>
-    <main>Contact Page</main>
-    <footer></footer>
+    <header class="header">
+      <div class="header__background-top"></div>
+      <div class="header__container container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html">
+                <img src="assets/images/home.png" alt="home" class="nav__img" />
+                <p>home</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                <img src="assets/images/work.png" alt="work" class="nav__img" />
+                <p>work</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#">
+                <img
+                  src="assets/images/about.png"
+                  alt="about"
+                  class="nav__img"
+                />
+                <p>about</p>
+              </a>
+            </li>
+            <li class="nav__item nav--active">
+              <a href="#">
+                <img
+                  src="assets/images/contact.png"
+                  alt="contact"
+                  class="nav__img"
+                />
+                <p>contact</p>
+              </a>
+            </li>
+          </ul>
+          <i class="nav__menu fas fa-th-large fa-2x"></i>
+        </nav>
+
+        <img
+          src="assets/images/header_logo.png"
+          alt="header-logo"
+          class="header__logo-img"
+        />
+        <div class="header__info">
+          <h1 class="header__info-light">
+            Light
+            <strong class="header__info-box">box</strong>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="section feature">
+        <div class="feature__content">
+          <h2 class="feature__title">Contact Us</h2>
+          <p class="feature__subtitle">
+            Reach us by completing the form below to send an email message, or
+            use any of these details:
+          </p>
+          <div class="feature__contact">
+            <div class="feature__contact-item">
+              <p class="feature__contact-label">Phone:</p>
+              <p>+555 555 9555</p>
+            </div>
+
+            <div class="feature__contact-item">
+              <p class="feature__contact-label">Skype:</p>
+              <p>Lightbox</p>
+            </div>
+            <div class="feature__contact-item">
+              <p class="feature__contact-label">Fax:</p>
+              <p>+555 555 9555</p>
+            </div>
+            <div class="feature__contact-item">
+              <p class="feature__contact-label">Twitter:</p>
+              <p>@lightbox</p>
+            </div>
+          </div>
+          <form action="/action_page.php" class="feature__form">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" class="form__input" />
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" class="form__input" />
+            <label for="phone">phone</label>
+            <input type="text" id="phone" name="phone" class="form__input" />
+            <label for="message">message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="14"
+              class="form__input-textarea"
+            >
+            </textarea>
+            <input type="submit" value="Submit" class="form__button" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__img">
+          <img src="assets/images/footer_logo.png" alt="footer-logo" />
+        </div>
+        <div class="footer__content">
+          <p class="footer__info">
+            <span class="footer__info-title">font via</span> dafont
+            (duepuntozero)
+            <br />
+            <span class="footer__info-title"> icons by </span> iconeden
+          </p>
+          <p class="footer__copyright">
+            <span class="footer__info-title">copyright (c) 2009</span>
+            rockablepress
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

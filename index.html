@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/fav_icon.png" />
+    <link rel="stylesheet" href="assets/css/home.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <title>Lightbox - Home</title>
+    <title>Lightbox</title>
   </head>
   <body>
     <header class="header">
@@ -20,24 +21,36 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item nav--active">
-              <img src="assets/images/home.png" alt="home" class="nav__img" />
-              <p>home</p>
+              <a href="#">
+                <img src="assets/images/home.png" alt="home" class="nav__img" />
+                <p>home</p>
+              </a>
             </li>
             <li class="nav__item">
-              <img src="assets/images/work.png" alt="work" class="nav__img" />
-              <p>work</p>
+              <a href="#">
+                <img src="assets/images/work.png" alt="work" class="nav__img" />
+                <p>work</p>
+              </a>
             </li>
             <li class="nav__item">
-              <img src="assets/images/about.png" alt="about" class="nav__img" />
-              <p>about</p>
+              <a href="#">
+                <img
+                  src="assets/images/about.png"
+                  alt="about"
+                  class="nav__img"
+                />
+                <p>about</p>
+              </a>
             </li>
             <li class="nav__item">
-              <img
-                src="assets/images/contact.png"
-                alt="contact"
-                class="nav__img"
-              />
-              <p>contact</p>
+              <a href="./contact.html">
+                <img
+                  src="assets/images/contact.png"
+                  alt="contact"
+                  class="nav__img"
+                />
+                <p>contact</p>
+              </a>
             </li>
           </ul>
           <i class="nav__menu fas fa-th-large fa-2x"></i>
@@ -49,11 +62,10 @@
           class="header__logo-img"
         />
         <div class="header__info">
-          <img
-            src="assets/images/logo_name.png"
-            alt="header-logo"
-            class="header__logo-name"
-          />
+          <h1 class="header__info-light">
+            Light
+            <strong class="header__info-box">box</strong>
+          </h1>
           <div class="header__overview">
             <p class="header__description">
               Hi, we're LightBox, a completely made up design agency that
@@ -68,7 +80,7 @@
     <main class="main container">
       <section class="section feature">
         <div class="feature__content">
-          <h1 class="feature__title">what we do</h1>
+          <h2 class="feature__title">what we do</h2>
           <div class="feature__item">
             <img
               src="assets/images/web_development.png"
@@ -76,7 +88,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h2 class="feature__item-subtitle">web development</h2>
+              <h3 class="feature__item-subtitle">web development</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -91,7 +103,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h2 class="feature__item-subtitle">graphics</h2>
+              <h3 class="feature__item-subtitle">graphics</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -106,7 +118,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h2 class="feature__item-subtitle">usability design</h2>
+              <h3 class="feature__item-subtitle">usability design</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -119,7 +131,7 @@
           <div class="feature__quote-content">
             <p>
               Lightbox did an amazing job with our website. From start to finish
-              they were pro&shy;fessional, fast and to&shy;tally fictitious.
+              they were professional, fast and totally fictitious.
             </p>
             <p>
               It was amazing how a company that doesn't even exist could put
@@ -134,7 +146,7 @@
       </section>
       <section class="section work">
         <div class="work__nav">
-          <h1 class="work__title">recent work</h1>
+          <h2 class="work__title">recent work</h2>
           <ul class="work__pagination-list">
             <li class="work__pagination-item page--active">1</li>
             <li class="work__pagination-item">2</li>
