@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/images/fav_icon.png" />
-    <link rel="stylesheet" href="assets/css/home.css" type="text/css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/home.css" type="text/css" />
     <title>Lightbox</title>
   </head>
-  <body>
+  <body onresize="removeSideNav()">
     <header class="header">
       <div class="header__background-top"></div>
       <div class="header__container container">
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list" id="sideNav">
+            <li>
+              <i
+                class="fas fa-long-arrow-alt-left nav__btn-close"
+                onclick="toggleSideNav()"
+              ></i>
+            </li>
             <li class="nav__item nav--active">
               <a href="#">
                 <img src="assets/images/home.png" alt="home" class="nav__img" />
@@ -53,7 +59,10 @@
               </a>
             </li>
           </ul>
-          <i class="nav__menu fas fa-th-large fa-2x"></i>
+          <i
+            class="nav__menu fas fa-th-large fa-2x"
+            onclick="toggleSideNav()"
+          ></i>
         </nav>
 
         <img
@@ -80,7 +89,7 @@
     <main class="main container">
       <section class="section feature">
         <div class="feature__content">
-          <h2 class="feature__title">what we do</h2>
+          <h2 class="feature__title">What we do</h2>
           <div class="feature__item">
             <img
               src="assets/images/web_development.png"
@@ -88,7 +97,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h3 class="feature__item-subtitle">web development</h3>
+              <h3 class="feature__item-subtitle">Web Development</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -103,7 +112,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h3 class="feature__item-subtitle">graphics</h3>
+              <h3 class="feature__item-subtitle">Graphics</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -118,7 +127,7 @@
               class="feature__item-img"
             />
             <div class="feature__item-details">
-              <h3 class="feature__item-subtitle">usability design</h3>
+              <h3 class="feature__item-subtitle">Usability Design</h3>
               <div class="feature__item-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incid&shy;idunt ut labore et dolore magna aliqua.
@@ -140,13 +149,13 @@
           </div>
           <div class="feature__quote-author">
             <p class="feature__quote-name">John Rushmore</p>
-            <p class="feature__quote-email">MADEUPPEOPLE.COM</p>
+            <p class="feature__quote-email">madeuppeople.com</p>
           </div>
         </aside>
       </section>
       <section class="section work">
         <div class="work__nav">
-          <h2 class="work__title">recent work</h2>
+          <h2 class="work__title">Recent Work</h2>
           <ul class="work__pagination-list">
             <li class="work__pagination-item page--active">1</li>
             <li class="work__pagination-item">2</li>
@@ -186,5 +195,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleSideNav() {
+        document
+          .getElementById("sideNav")
+          .classList.toggle("nav__list--toggle");
+      }
+      function removeSideNav() {
+        var w = window.outerWidth;
+        if (w > 767.98) {
+          document
+            .getElementById("sideNav")
+            .classList.remove("nav__list--toggle");
+        }
+      }
+    </script>
   </body>
 </html>
